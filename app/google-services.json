@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "200150097625",
+    "project_id": "hd5-wallpaper",
+    "storage_bucket": "hd5-wallpaper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200150097625:android:32589ff7dda4b7bfe228c8",
+        "android_client_info": {
+          "package_name": "com.a5universe.hd5wallpaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200150097625-lfp13h47dbu2psno10tgn315meguvi92.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.a5universe.hd5wallpaper",
+            "certificate_hash": "e79e4ff5c8cd8b84abea273950005a748a462735"
+          }
+        },
+        {
+          "client_id": "200150097625-ovkb9g2p4iv7jr01nbtbglmp8kt96vla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0FqqUb0F5QIhRB06pM9NW5tRlN5hx1cA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200150097625-ovkb9g2p4iv7jr01nbtbglmp8kt96vla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
