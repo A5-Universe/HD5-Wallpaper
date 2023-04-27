@@ -59,15 +59,11 @@ class CategoryActivity : AppCompatActivity() {
             val data = value?.toObjects(BomModel::class.java)
             listOfCatWallpaper.addAll(data!!)
 
-                binding.catTitle.text = name.toString()
-                binding.catCount.text="${listOfCatWallpaper.size.toString()} Wallpaper Available"
+            binding.catTitle.text = name.toString()
 
             binding.catRcv.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
             binding.catRcv.adapter = CatImagesAdapter(this,listOfCatWallpaper)
-
         }
-
-
 
     }
 

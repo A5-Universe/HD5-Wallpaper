@@ -1,6 +1,7 @@
 package com.a5universe.hd5wallpaper
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         // home fragment auto loaded
         replaceFragment(HomeFragment())
@@ -35,6 +37,24 @@ class MainActivity : AppCompatActivity() {
                 replaceFragment(DownloadFragment())  // download fragment replace
             }
         }
+
+
+        // setting btn click event
+        binding.icSetting.setOnClickListener{
+            startActivity(Intent(this, SettingActivity::class.java))
+        }
+
+        // live wallpaper btn click event
+        binding.icLive.setOnClickListener{
+            startActivity(Intent(this, liveWallpaper::class.java))
+        }
+
+        // search btn work
+        binding.icSearch.setOnClickListener {
+            // search popup window
+        }
+
+
 
     }
     //method for replacement fragment...

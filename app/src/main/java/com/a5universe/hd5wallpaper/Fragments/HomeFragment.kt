@@ -1,6 +1,7 @@
 package com.a5universe.hd5wallpaper.Fragments
 
 import android.os.Bundle
+import android.text.Html
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -44,9 +45,9 @@ class HomeFragment : Fragment() {
             binding.rcvCategory.adapter = CategoryAdapter(requireContext(),listOfCategory)
         }
 
+
         return binding.root
-
-
     }
+
 
 }

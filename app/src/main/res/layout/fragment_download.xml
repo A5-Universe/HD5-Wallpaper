@@ -8,25 +8,39 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/background">
+        android:background="@color/icon_yellow">
 
-        <TextView
+        <RelativeLayout
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Downloaded"
-            android:textColor="@color/white"
-            android:fontFamily="@font/andika_new_basic_bold"
-            android:textStyle="bold"
-            android:textSize="@dimen/_29ssp"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginLeft="@dimen/_30sdp"
-            android:id="@+id/txtMain"/>
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/top_shape"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/sansation_bold"
+                android:gravity="center"
+                android:text="@string/downloaded"
+                android:textColor="@color/icon_yellow"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:foregroundGravity="center"/>
+
+        </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/rcvCollection"
-            android:layout_below="@id/txtMain"/>
+            android:layout_below="@id/toolbar" />
     </RelativeLayout>
 
 

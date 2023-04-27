@@ -1,20 +1,40 @@
 <resources>
     <string name="app_name">HD5 Wallpaper</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-
-<!--    For Test Id-->
+    <!--    For Test Id-->
     <string name="testAppId">ca-app-pub-3940256099942544~3347511713</string>
     <string name="testBannerAdUnitId">ca-app-pub-3940256099942544/6300978111</string>
     <string name="testInterstitialAdUnitId">ca-app-pub-3940256099942544/1033173712</string>
     <string name="testRewardAdUnitId">ca-app-pub-3940256099942544/5224354917</string>
 
-<!--    For Admob id-->
+    <!--    For Admob id-->
     <string name="AppId">ca-app-pub-6898726742055507~6237246849</string>
     <string name="bannerAdUnitId">ca-app-pub-6898726742055507/3704799880</string>
     <string name="InterstitialAdUnitId">ca-app-pub-6898726742055507/2030462425</string>
 
+    <!--    For Package Logo-->
+    <string name="PackageName">From \n A5 Universe</string>
 
+    <!--    toolbar name & Text-->
+    <string name="hd_5_wallpaper">HD 5 Wallpaper</string>
+    <string name="liveWallpaper">Live Wallpaper</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="download">Download</string>
+    <string name="setWallpaper">Set Wallpaper</string>
+    <string name="categories">Categories</string>
+    <string name="trending">Trending</string>
+    <string name="setting">Settings</string>
+    <string name="searchText">Search Categories</string>
+
+    <!--    setting item-->
+    <string name="profile">My Profile</string>
+    <string name="coin">My Coins</string>
+    <string name="reward">Rewards</string>
+    <string name="wishlist">Wish List</string>
+    <string name="language">App Language</string>
+    <string name="notification">Notifications</string>
+    <string name="help">Help &amp; Feedback</string>
+    <string name="about">About</string>
+    <string name="invite">Invite and earn</string>
 
 </resources>

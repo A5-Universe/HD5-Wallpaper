@@ -15,24 +15,24 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_65sdp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnDownload"
             android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_50sdp"
+            android:layout_height="@dimen/_40sdp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:text="Download"
+            android:text="@string/download"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/sansation_bold"
             android:layout_margin="@dimen/_2sdp"
-            android:textColor="@color/white"
+            android:textColor="@color/icon_yellow"
             android:background="@drawable/btn_download_shape"
             app:backgroundTint="@null"/>
 
@@ -40,12 +40,14 @@
             android:id="@+id/btnSetWallpaper"
             android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_50sdp"
+            android:layout_height="@dimen/_40sdp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:text="Set Wallpaper"
+            android:text="@string/setWallpaper"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/sansation_bold"
             android:layout_margin="@dimen/_2sdp"
-            android:textColor="@color/white"
+            android:textColor="@color/icon_yellow"
             android:background="@drawable/btn_download_shape"
             app:backgroundTint="@null"/>
     </LinearLayout>
