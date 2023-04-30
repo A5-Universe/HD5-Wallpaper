@@ -39,23 +39,27 @@
                 android:foregroundGravity="center"/>
             <ImageButton
                 android:id="@+id/search"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:background="@drawable/search"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/search_yellow"
                android:layout_alignParentRight="true"
-                android:layout_marginRight="@dimen/_40sdp"
-                android:layout_marginTop="@dimen/_4sdp"/>
+                android:layout_marginRight="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
 
         </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/liveWallpaper"
-            android:textSize="@dimen/_34sdp"
-            android:textColor="@color/background"
-            android:gravity="center"
-            android:layout_below="@id/toolbar"/>
+            app:lottie_rawRes="@raw/coming_soon"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:scaleType="fitCenter"/>
+    </RelativeLayout>
+
 
 
     </RelativeLayout>

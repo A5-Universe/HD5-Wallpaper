@@ -29,6 +29,8 @@ class DownloadFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,savedInstanceState: Bundle?): View? {
         binding = FragmentDownloadBinding.inflate(layoutInflater,container,false)
 
+
+
         val allFiles: Array<File>
         val  imageList = arrayListOf<String>()
 

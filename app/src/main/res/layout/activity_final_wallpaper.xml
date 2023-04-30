@@ -51,4 +51,5 @@
             android:background="@drawable/btn_download_shape"
             app:backgroundTint="@null"/>
     </LinearLayout>
+
 </RelativeLayout>

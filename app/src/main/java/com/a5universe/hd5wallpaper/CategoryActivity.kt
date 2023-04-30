@@ -24,6 +24,10 @@ class CategoryActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        //for back button click
+        binding.btnBack.setOnClickListener {
+            onBackPressed()
+        }
         //for firebase app ads control
         firestore = FirebaseFirestore.getInstance()
         firestore.collection("Ads").document("hMpfXLkTbslnxunQei3C").addSnapshotListener{value,error->
@@ -44,7 +48,6 @@ class CategoryActivity : AppCompatActivity() {
             }
         }
         //...
-
 
 
         val db = FirebaseFirestore.getInstance()
@@ -111,6 +114,11 @@ class CategoryActivity : AppCompatActivity() {
     override fun onDestroy() {
         adView.destroy()
         super.onDestroy()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 
 
