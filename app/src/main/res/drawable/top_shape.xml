@@ -4,6 +4,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <solid android:color="@color/background"/>
-    <corners android:bottomLeftRadius="@dimen/_25sdp"
-        android:bottomRightRadius="@dimen/_25sdp"/>
+    <corners android:bottomLeftRadius="@dimen/_20sdp"
+        android:bottomRightRadius="@dimen/_20sdp"/>
 </shape>

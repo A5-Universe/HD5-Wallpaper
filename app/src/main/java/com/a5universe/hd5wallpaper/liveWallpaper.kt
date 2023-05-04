@@ -11,7 +11,7 @@ class liveWallpaper : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLiveWallpaperBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_live_wallpaper)
+        setContentView(binding.root)
 
         //for back button click
         binding.btnBack.setOnClickListener {

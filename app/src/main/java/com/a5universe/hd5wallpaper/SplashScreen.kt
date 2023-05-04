@@ -40,7 +40,7 @@ class SplashScreen : AppCompatActivity() {
         //for splash
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
-        }, 1700) //2000 millisecond
+        }, 1700) //1700 millisecond
 
     }
 }

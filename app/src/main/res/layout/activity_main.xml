@@ -17,6 +17,8 @@
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp" />
 
+
+
     <LinearLayout
         android:id="@+id/bottomNavBar"
         android:layout_width="match_parent"
@@ -50,17 +52,13 @@
                 android:background="@drawable/live"/>
         </FrameLayout>
 
-        <FrameLayout
-            android:id="@+id/ic_search"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-            <ImageView
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:layout_gravity="center"
-                android:background="@drawable/search"/>
-        </FrameLayout>
+<!--        <FrameLayout-->
+<!--            android:id="@+id/ic_search"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1">-->
+<!--            -->
+<!--        </FrameLayout>-->
 
         <FrameLayout
             android:id="@+id/ic_download"

@@ -77,11 +77,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // search btn work
-        binding.icSearch.setOnClickListener {
-            // search popup window
-        }
-
 
 
     }
@@ -106,7 +101,6 @@ class MainActivity : AppCompatActivity() {
         }
         backPressedTime = System.currentTimeMillis()
     }
-
 
 
     //check internet connection...
@@ -148,5 +142,4 @@ class MainActivity : AppCompatActivity() {
             return networkInfo.isConnected
         }
     }
-
 }

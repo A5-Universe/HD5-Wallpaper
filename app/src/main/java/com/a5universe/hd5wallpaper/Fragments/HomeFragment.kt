@@ -1,7 +1,6 @@
 package com.a5universe.hd5wallpaper.Fragments
 
 import android.os.Bundle
-import android.text.Html
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -43,8 +42,23 @@ class HomeFragment : Fragment() {
 
             binding.rcvCategory.layoutManager= GridLayoutManager(requireContext(),2)
             binding.rcvCategory.adapter = CategoryAdapter(requireContext(),listOfCategory)
+
+
         }
 
+//      search icon click event
+        binding.icSearch.setOnClickListener {
+            if (binding.searchView.visibility == View.VISIBLE) {
+                // If the search view is currently visible, hide it
+                binding.searchView.visibility = View.GONE
+
+                //....
+            } else {
+                // If the search view is currently hidden, show it
+                binding.searchView.visibility = View.VISIBLE
+            }
+
+        }
 
         return binding.root
     }
