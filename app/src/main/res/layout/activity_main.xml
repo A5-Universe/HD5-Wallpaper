@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".ui.activities.MainActivity"
     android:background="@color/icon_yellow">
 
     <FrameLayout
@@ -52,13 +52,18 @@
                 android:background="@drawable/live"/>
         </FrameLayout>
 
-<!--        <FrameLayout-->
-<!--            android:id="@+id/ic_search"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1">-->
-<!--            -->
-<!--        </FrameLayout>-->
+        <FrameLayout
+            android:id="@+id/ic_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/search"/>
+
+        </FrameLayout>
 
         <FrameLayout
             android:id="@+id/ic_download"

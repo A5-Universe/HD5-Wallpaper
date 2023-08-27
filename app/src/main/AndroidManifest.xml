@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<!--    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>-->
 
     <application
         android:name="androidx.multidex.MultiDexApplication"
@@ -22,16 +23,16 @@
         android:theme="@style/Theme.HD5Wallpaper"
         tools:targetApi="31">
         <activity
-            android:name=".liveWallpaper"
+            android:name=".ui.activities.liveWallpaper"
             android:exported="false" />
         <activity
-            android:name=".SettingActivity"
+            android:name=".ui.activities.SettingActivity"
             android:exported="false" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".CategoryActivity" />
-        <activity android:name=".FinalWallpaper" />
+        <activity android:name=".ui.activities.MainActivity" />
+        <activity android:name=".ui.activities.CategoryActivity" />
+        <activity android:name=".ui.activities.FinalWallpaper" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".ui.activities.SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.HD5WallpaperSplash">
             <intent-filter>
