@@ -22,7 +22,7 @@
     <LinearLayout
         android:id="@+id/bottomNavBar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_height="@dimen/_35sdp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottom_shape"
         android:orientation="horizontal">
@@ -34,8 +34,8 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
                 android:layout_gravity="center"
                 android:background="@drawable/home"/>
         </FrameLayout>
@@ -46,8 +46,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
             <ImageView
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
                 android:layout_gravity="center"
                 android:background="@drawable/live"/>
         </FrameLayout>
@@ -58,8 +58,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
             <ImageView
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
                 android:layout_gravity="center"
                 android:background="@drawable/search"/>
 
@@ -71,8 +71,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
             <ImageView
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
                 android:layout_gravity="center"
                 android:background="@drawable/download"/>
         </FrameLayout>
@@ -84,8 +84,8 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
                 android:layout_gravity="center"
                 android:background="@drawable/setting"/>
         </FrameLayout>

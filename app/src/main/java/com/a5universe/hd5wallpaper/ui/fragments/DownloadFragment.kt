@@ -18,7 +18,7 @@ import java.io.File
 
 class DownloadFragment : Fragment() {
 
-    lateinit var binding: FragmentDownloadBinding
+    private lateinit var binding: FragmentDownloadBinding
     private val STORAGE_PERMISSION_CODE = 101
 
 
@@ -29,7 +29,7 @@ class DownloadFragment : Fragment() {
 
 
         val allFiles: Array<File>
-        val  imageList = arrayListOf<String>()
+        val imageList = arrayListOf<String>()
 
         //for allow storage permission then code is executable
         requestPermission()

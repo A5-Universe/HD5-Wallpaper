@@ -12,7 +12,7 @@ import com.a5universe.hd5wallpaper.data.model.BomModel
 import com.a5universe.hd5wallpaper.R
 import com.bumptech.glide.Glide
 
-class CatImagesAdapter(val requireContext: Context, val listBestOfMonth: ArrayList<BomModel>)
+class CatImagesAdapter(private val requireContext: Context, private val listBestOfMonth: ArrayList<BomModel>)
     :RecyclerView.Adapter<CatImagesAdapter.bomViewHolder>() {
 
     inner class bomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)

@@ -17,7 +17,7 @@ import com.a5universe.hd5wallpaper.databinding.ActivitySplashScreenBinding
 
 class SplashScreen : AppCompatActivity() {
 
-    lateinit var binding: ActivitySplashScreenBinding
+    private lateinit var binding: ActivitySplashScreenBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

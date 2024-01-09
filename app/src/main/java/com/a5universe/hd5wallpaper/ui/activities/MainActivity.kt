@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity(), SearchClickListener{
             replaceFragment(DownloadFragment())
         }
 
-
         // home btn click event
         binding.icHome.setOnClickListener{
 
@@ -62,7 +61,6 @@ class MainActivity : AppCompatActivity(), SearchClickListener{
 
         }
 
-
         // download btn click event
         binding.icDownload.setOnClickListener{
             val existingFragment = supportFragmentManager.findFragmentById(R.id.fragmentReplace)
@@ -76,7 +74,6 @@ class MainActivity : AppCompatActivity(), SearchClickListener{
 
         }
 
-
         // setting btn click event
         binding.icSetting.setOnClickListener{
             startActivity(Intent(this, SettingActivity::class.java))
@@ -87,20 +84,18 @@ class MainActivity : AppCompatActivity(), SearchClickListener{
 
             if (checkForInternet(this)) {
                 // internet connect live wallpaper show
-                startActivity(Intent(this, liveWallpaper::class.java))
+                startActivity(Intent(this, LiveWallpaper::class.java))
             } else {
                 // internet disconnect offline show
                 replaceFragment(OfflineFragment())
             }
         }
 
-
         //search btn click event
         binding.icSearch.setOnClickListener {
            // method call
             onSearchClicked()
         }
-
     }
 
 
@@ -133,7 +128,7 @@ class MainActivity : AppCompatActivity(), SearchClickListener{
     }
 
 
-    //check internet connection...
+    //check internet connection.
     private fun checkForInternet(context: Context): Boolean {
 
         // register activity with the connectivity manager service
@@ -173,6 +168,7 @@ class MainActivity : AppCompatActivity(), SearchClickListener{
         }
     }
 }
+
 // interface for SearchClickListener
 interface SearchClickListener {
     fun onSearchClicked()

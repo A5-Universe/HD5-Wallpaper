@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.a5universe.hd5wallpaper.databinding.ActivityLiveWallpaperBinding
 
-class liveWallpaper : AppCompatActivity() {
+class LiveWallpaper : AppCompatActivity() {
 
     lateinit var binding: ActivityLiveWallpaperBinding
     override fun onCreate(savedInstanceState: Bundle?) {

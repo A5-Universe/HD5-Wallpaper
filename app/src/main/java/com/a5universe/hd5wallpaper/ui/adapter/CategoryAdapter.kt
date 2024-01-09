@@ -20,7 +20,7 @@ class CategoryAdapter(
 ) : RecyclerView.Adapter<CategoryAdapter.bomViewHolder>() {
 
 
-    private val filteredListOfCategory = mutableListOf<categoryModel>()
+    private val  filteredListOfCategory = mutableListOf<categoryModel>()
     private var query: String = ""
     init {
         filteredListOfCategory.addAll(listOfCategory)

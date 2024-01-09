@@ -9,18 +9,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.core.content.contentValuesOf
 import androidx.core.view.WindowCompat
 import com.a5universe.hd5wallpaper.databinding.ActivityFinalWallpaperBinding
 import com.bumptech.glide.Glide
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.LoadAdError
-import com.google.android.gms.ads.interstitial.InterstitialAd
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
-import com.google.android.gms.ads.rewarded.RewardedAd
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
@@ -33,22 +27,13 @@ import java.util.*
 
 class FinalWallpaper : AppCompatActivity() {
 
-    lateinit var binding: ActivityFinalWallpaperBinding
-    private var mInterstitialAd: InterstitialAd? = null // for ads
+    private lateinit var binding: ActivityFinalWallpaperBinding
 
-    private var rewardedAd: RewardedAd? = null
-    private var TAG = "MainActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFinalWallpaperBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        //for interstitial method
-        loadInterstitialAd()
-        //...
-
-
 
         // for full screen status bar
         WindowCompat.setDecorFitsSystemWindows(window, false)
@@ -77,8 +62,6 @@ class FinalWallpaper : AppCompatActivity() {
                 val wallpaperManager = WallpaperManager.getInstance(applicationContext)
                 wallpaperManager.setBitmap(result.await())
             }
-            // show Interstitial Ad method
-            showInterAd()
 
         }
 
@@ -92,38 +75,10 @@ class FinalWallpaper : AppCompatActivity() {
                 saveImage(result.await())
             }
 
-            // show Interstitial Ad method
-            showInterAd()
         }
     }
 
-    private fun showInterAd() {
-            //ads load
-            if (mInterstitialAd != null) {
-                mInterstitialAd?.show(this)
-            } else {
-                Log.d("TAG", "The interstitial ad wasn't ready yet.")
-            }
-            //...
-    }
 
-    private fun loadInterstitialAd() {
-
-        var adRequest = AdRequest.Builder().build()
-
-        InterstitialAd.load(this,"ca-app-pub-6898726742055507/2030462425", adRequest, object : InterstitialAdLoadCallback() {
-            override fun onAdFailedToLoad(adError: LoadAdError) {
-                Log.d(TAG, adError.toString())
-                mInterstitialAd = null
-            }
-
-            override fun onAdLoaded(interstitialAd: InterstitialAd) {
-                Log.d(TAG, "Ad was loaded.")
-                mInterstitialAd = interstitialAd
-            }
-        })
-
-    }
 
     private fun URL.toBitmap(): Bitmap? {
         return try {

@@ -35,7 +35,7 @@
                 android:layout_centerInParent="true"
                 android:fontFamily="@font/sansation_bold"
                 android:gravity="center"
-                android:text="Loading..."
+                android:text="@string/loading"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp"
                 android:textStyle="bold" />

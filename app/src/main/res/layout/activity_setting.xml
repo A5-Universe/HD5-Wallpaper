@@ -11,8 +11,7 @@
     <RelativeLayout
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_35sdp"
-        android:layout_alignParentTop="true">
+        android:layout_height="@dimen/_35sdp">
 
         <TextView
             android:layout_width="match_parent"
@@ -29,7 +28,7 @@
             android:layout_width="@dimen/_40sdp"
             android:layout_height="match_parent"
             android:background="@drawable/back"
-            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
             android:foregroundGravity="center"/>
     </RelativeLayout>
 
@@ -37,7 +36,6 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"
         android:background="@color/icon_yellow"
-        android:layout_below="@id/toolbar"
         android:layout_marginBottom="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_10sdp"/>
 
@@ -50,7 +48,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
-            android:layout_marginLeft="@dimen/_75sdp"
+            android:layout_marginStart="@dimen/_75sdp"
             android:fontFamily="@font/sansation_bold"
             android:gravity="center"
             android:text="@string/profile"
@@ -61,7 +59,7 @@
         <ImageView
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
-            android:layout_marginLeft="@dimen/_19sdp"
+            android:layout_marginStart="@dimen/_19sdp"
             android:background="@drawable/profile" />
 
     </RelativeLayout>
@@ -70,7 +68,6 @@
         android:id="@+id/coin"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_35sdp"
-        android:layout_alignParentTop="true"
         android:layout_margin="@dimen/_10sdp">
 
         <TextView
@@ -82,12 +79,12 @@
             android:textColor="@color/icon_yellow"
             android:textSize="@dimen/_15ssp"
             android:textStyle="bold"
-            android:layout_marginLeft="@dimen/_75sdp"/>
+            android:layout_marginStart="@dimen/_75sdp"/>
         <ImageView
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:background="@drawable/coin"
-            android:layout_marginLeft="@dimen/_19sdp" />
+            android:layout_marginStart="@dimen/_19sdp" />
 
     </RelativeLayout>
 
@@ -95,7 +92,6 @@
         android:id="@+id/reward"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_35sdp"
-        android:layout_alignParentTop="true"
         android:layout_margin="@dimen/_10sdp">
 
         <TextView
@@ -107,12 +103,12 @@
             android:textColor="@color/icon_yellow"
             android:textSize="@dimen/_15ssp"
             android:textStyle="bold"
-            android:layout_marginLeft="@dimen/_75sdp"/>
+            android:layout_marginStart="@dimen/_75sdp"/>
         <ImageView
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:background="@drawable/reward"
-            android:layout_marginLeft="@dimen/_19sdp" />
+            android:layout_marginStart="@dimen/_19sdp" />
 
     </RelativeLayout>
 
@@ -120,7 +116,6 @@
         android:id="@+id/wishList"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_35sdp"
-        android:layout_alignParentTop="true"
         android:layout_margin="@dimen/_10sdp">
 
         <TextView
@@ -132,12 +127,12 @@
             android:textColor="@color/icon_yellow"
             android:textSize="@dimen/_15ssp"
             android:textStyle="bold"
-            android:layout_marginLeft="@dimen/_75sdp"/>
+            android:layout_marginStart="@dimen/_75sdp"/>
         <ImageView
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:background="@drawable/wishlist"
-            android:layout_marginLeft="@dimen/_19sdp" />
+            android:layout_marginStart="@dimen/_19sdp" />
 
     </RelativeLayout>
 
@@ -145,7 +140,6 @@
         android:id="@+id/language"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_35sdp"
-        android:layout_alignParentTop="true"
         android:layout_margin="@dimen/_10sdp">
 
         <TextView
@@ -157,12 +151,12 @@
             android:textColor="@color/icon_yellow"
             android:textSize="@dimen/_15ssp"
             android:textStyle="bold"
-            android:layout_marginLeft="@dimen/_75sdp"/>
+            android:layout_marginStart="@dimen/_75sdp"/>
         <ImageView
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:background="@drawable/language"
-            android:layout_marginLeft="@dimen/_19sdp" />
+            android:layout_marginStart="@dimen/_19sdp" />
 
     </RelativeLayout>
 
@@ -170,7 +164,6 @@
         android:id="@+id/notification"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_35sdp"
-        android:layout_alignParentTop="true"
         android:layout_margin="@dimen/_10sdp">
 
         <TextView
@@ -182,12 +175,12 @@
             android:textColor="@color/icon_yellow"
             android:textSize="@dimen/_15ssp"
             android:textStyle="bold"
-            android:layout_marginLeft="@dimen/_75sdp"/>
+            android:layout_marginStart="@dimen/_75sdp"/>
         <ImageView
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:background="@drawable/notification"
-            android:layout_marginLeft="@dimen/_19sdp" />
+            android:layout_marginStart="@dimen/_19sdp" />
 
     </RelativeLayout>
 
@@ -195,7 +188,6 @@
         android:id="@+id/help"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_35sdp"
-        android:layout_alignParentTop="true"
         android:layout_margin="@dimen/_10sdp">
 
         <TextView
@@ -207,12 +199,12 @@
             android:textColor="@color/icon_yellow"
             android:textSize="@dimen/_15ssp"
             android:textStyle="bold"
-            android:layout_marginLeft="@dimen/_75sdp"/>
+            android:layout_marginStart="@dimen/_75sdp"/>
         <ImageView
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:background="@drawable/help"
-            android:layout_marginLeft="@dimen/_19sdp" />
+            android:layout_marginStart="@dimen/_19sdp" />
 
     </RelativeLayout>
 
@@ -220,7 +212,6 @@
         android:id="@+id/about"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_35sdp"
-        android:layout_alignParentTop="true"
         android:layout_margin="@dimen/_10sdp">
 
         <TextView
@@ -232,12 +223,12 @@
             android:textColor="@color/icon_yellow"
             android:textSize="@dimen/_15ssp"
             android:textStyle="bold"
-            android:layout_marginLeft="@dimen/_75sdp"/>
+            android:layout_marginStart="@dimen/_75sdp"/>
         <ImageView
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:background="@drawable/about"
-            android:layout_marginLeft="@dimen/_19sdp" />
+            android:layout_marginStart="@dimen/_19sdp" />
 
     </RelativeLayout>
 
@@ -245,7 +236,6 @@
         android:id="@+id/invite"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_35sdp"
-        android:layout_alignParentTop="true"
         android:layout_margin="@dimen/_10sdp">
 
         <TextView
@@ -257,12 +247,12 @@
             android:textColor="@color/icon_yellow"
             android:textSize="@dimen/_15ssp"
             android:textStyle="bold"
-            android:layout_marginLeft="@dimen/_75sdp"/>
+            android:layout_marginStart="@dimen/_75sdp"/>
         <ImageView
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:background="@drawable/invite"
-            android:layout_marginLeft="@dimen/_19sdp" />
+            android:layout_marginStart="@dimen/_19sdp" />
 
     </RelativeLayout>
 

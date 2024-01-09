@@ -14,7 +14,6 @@ import com.a5universe.hd5wallpaper.data.model.BomModel
 import com.a5universe.hd5wallpaper.data.model.categoryModel
 import com.a5universe.hd5wallpaper.databinding.FragmentHomeBinding
 import com.google.firebase.firestore.FirebaseFirestore
-import java.util.Locale
 
 class HomeFragment : Fragment() {
 

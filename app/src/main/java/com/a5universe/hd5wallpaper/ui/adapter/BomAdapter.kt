@@ -12,7 +12,7 @@ import com.a5universe.hd5wallpaper.data.model.BomModel
 import com.a5universe.hd5wallpaper.R
 import com.bumptech.glide.Glide
 
-class BomAdapter(val requireContext: Context,val listBestOfMonth: ArrayList<BomModel>)
+class BomAdapter(private val requireContext: Context, private val listBestOfMonth: ArrayList<BomModel>)
     :RecyclerView.Adapter<BomAdapter.bomViewHolder>() {
 
     inner class bomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
@@ -35,7 +35,6 @@ class BomAdapter(val requireContext: Context,val listBestOfMonth: ArrayList<BomM
         }
     }
 
-    override fun getItemCount() =listBestOfMonth.size
-
+    override fun getItemCount() = listBestOfMonth.size
 
 }

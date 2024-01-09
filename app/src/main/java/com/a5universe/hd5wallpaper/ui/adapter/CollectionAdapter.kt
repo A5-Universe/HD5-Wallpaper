@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.a5universe.hd5wallpaper.R
 import com.bumptech.glide.Glide
 
-class CollectionAdapter(val requireContext: Context, val listBestOfMonth: ArrayList<String>)
+class CollectionAdapter(private val requireContext: Context, private val listBestOfMonth: ArrayList<String>)
     :RecyclerView.Adapter<CollectionAdapter.bomViewHolder>() {
 
     inner class bomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)

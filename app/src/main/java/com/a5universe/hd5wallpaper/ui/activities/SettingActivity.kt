@@ -7,7 +7,7 @@ import com.a5universe.hd5wallpaper.databinding.ActivitySettingBinding
 
 class SettingActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivitySettingBinding
+    private lateinit var binding: ActivitySettingBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySettingBinding.inflate(layoutInflater)
@@ -48,8 +48,6 @@ class SettingActivity : AppCompatActivity() {
         binding.invite.setOnClickListener {
             Toast.makeText(this@SettingActivity, "Invite is coming soon", Toast.LENGTH_SHORT).show()
         }
-
-
 
 
         //for back button click
