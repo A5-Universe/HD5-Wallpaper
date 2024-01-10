@@ -3,8 +3,8 @@ package com.a5universe.hd5wallpaper.ui.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.a5universe.hd5wallpaper.data.BomModel
 import com.a5universe.hd5wallpaper.ui.adapter.CatImagesAdapter
-import com.a5universe.hd5wallpaper.data.model.BomModel
 import com.a5universe.hd5wallpaper.databinding.ActivityCategoryBinding
 import com.google.firebase.firestore.FirebaseFirestore
 

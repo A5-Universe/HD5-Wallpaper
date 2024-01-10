@@ -8,25 +8,25 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.a5universe.hd5wallpaper.ui.activities.FinalWallpaper
-import com.a5universe.hd5wallpaper.data.model.BomModel
 import com.a5universe.hd5wallpaper.R
+import com.a5universe.hd5wallpaper.data.BomModel
 import com.bumptech.glide.Glide
 
 class CatImagesAdapter(private val requireContext: Context, private val listBestOfMonth: ArrayList<BomModel>)
-    :RecyclerView.Adapter<CatImagesAdapter.bomViewHolder>() {
+    :RecyclerView.Adapter<CatImagesAdapter.BomViewHolder>() {
 
-    inner class bomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    inner class BomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     {
         val imageView = itemView.findViewById<ImageView>(R.id.catImage)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): bomViewHolder {
-       return bomViewHolder(
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BomViewHolder {
+       return BomViewHolder(
            LayoutInflater.from(requireContext).inflate(R.layout.item_wallpaper,parent,false)
        )
     }
 
-    override fun onBindViewHolder(holder: bomViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: BomViewHolder, position: Int) {
 
         Glide.with(requireContext).load(listBestOfMonth[position].link).into(holder.imageView)
         holder.itemView.setOnClickListener {

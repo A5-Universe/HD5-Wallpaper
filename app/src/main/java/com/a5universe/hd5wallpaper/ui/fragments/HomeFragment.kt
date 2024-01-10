@@ -8,10 +8,10 @@ import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.a5universe.hd5wallpaper.data.BomModel
+import com.a5universe.hd5wallpaper.data.categoryModel
 import com.a5universe.hd5wallpaper.ui.adapter.BomAdapter
 import com.a5universe.hd5wallpaper.ui.adapter.CategoryAdapter
-import com.a5universe.hd5wallpaper.data.model.BomModel
-import com.a5universe.hd5wallpaper.data.model.categoryModel
 import com.a5universe.hd5wallpaper.databinding.FragmentHomeBinding
 import com.google.firebase.firestore.FirebaseFirestore
 

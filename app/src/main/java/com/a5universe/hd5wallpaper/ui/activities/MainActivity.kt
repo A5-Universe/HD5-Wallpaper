@@ -116,6 +116,7 @@ class MainActivity : AppCompatActivity(), SearchClickListener{
 
     //on back press method
     override fun onBackPressed() {
+        super.onBackPressed()
         if (backPressedTime + 3000 > System.currentTimeMillis()) {
             // If the back button is pressed, exit the app
             moveTaskToBack(true)

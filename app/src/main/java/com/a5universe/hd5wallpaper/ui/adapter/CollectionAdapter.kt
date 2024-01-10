@@ -10,21 +10,21 @@ import com.a5universe.hd5wallpaper.R
 import com.bumptech.glide.Glide
 
 class CollectionAdapter(private val requireContext: Context, private val listBestOfMonth: ArrayList<String>)
-    :RecyclerView.Adapter<CollectionAdapter.bomViewHolder>() {
+    :RecyclerView.Adapter<CollectionAdapter.BomViewHolder>() {
 
-    inner class bomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    inner class BomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     {
         val imageView = itemView.findViewById<ImageView>(R.id.catImage)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): bomViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BomViewHolder {
 
-       return bomViewHolder(
+       return BomViewHolder(
            LayoutInflater.from(requireContext).inflate(R.layout.item_wallpaper,parent,false)
        )
     }
 
-    override fun onBindViewHolder(holder: bomViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: BomViewHolder, position: Int) {
         Glide.with(requireContext).load(listBestOfMonth[position]).into(holder.imageView)
 
     }
