@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.LiveWallpaper"
+    tools:context=".ui.activities.live_wallpaper.LiveWallpaper"
     android:orientation="vertical"
     android:background="@color/icon_yellow">
 
@@ -23,7 +23,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/sansation_bold"
+                android:fontFamily="@font/roboto_regular"
                 android:gravity="center"
                 android:text="@string/liveWallpaper"
                 android:textColor="@color/icon_yellow"

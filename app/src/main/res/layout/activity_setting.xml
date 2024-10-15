@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.activities.SettingActivity"
+    tools:context=".ui.activities.setting.SettingActivity"
     android:background="@color/background">
 
     <RelativeLayout
@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_regular"
             android:gravity="center"
             android:text="@string/setting"
             android:textColor="@color/icon_yellow"
@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_75sdp"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_regular"
             android:gravity="center"
             android:text="@string/profile"
             android:textColor="@color/icon_yellow"
@@ -73,7 +73,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_regular"
             android:gravity="center"
             android:text="@string/coin"
             android:textColor="@color/icon_yellow"
@@ -97,7 +97,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_regular"
             android:gravity="center"
             android:text="@string/reward"
             android:textColor="@color/icon_yellow"
@@ -121,7 +121,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_regular"
             android:gravity="center"
             android:text="@string/wishlist"
             android:textColor="@color/icon_yellow"
@@ -145,7 +145,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_regular"
             android:gravity="center"
             android:text="@string/language"
             android:textColor="@color/icon_yellow"
@@ -169,7 +169,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_regular"
             android:gravity="center"
             android:text="@string/notification"
             android:textColor="@color/icon_yellow"
@@ -193,7 +193,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_regular"
             android:gravity="center"
             android:text="@string/help"
             android:textColor="@color/icon_yellow"
@@ -217,7 +217,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_regular"
             android:gravity="center"
             android:text="@string/about"
             android:textColor="@color/icon_yellow"
@@ -241,7 +241,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_30sdp"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_regular"
             android:gravity="center"
             android:text="@string/invite"
             android:textColor="@color/icon_yellow"
@@ -264,7 +264,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_regular"
             android:gravity="center"
             android:text="@string/PackageName"
             android:textColor="@color/icon_yellow"

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.FinalWallpaper">
+    tools:context=".ui.activities.set_wallpaper.FinalWallpaper">
 
     <ImageView
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             android:layout_height="@dimen/_40sdp"
             android:text="@string/download"
             android:textSize="@dimen/_10ssp"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_black"
             android:layout_margin="@dimen/_2sdp"
             android:textColor="@color/icon_yellow"
             android:background="@drawable/btn_download_shape"
@@ -41,7 +41,7 @@
             android:layout_height="@dimen/_40sdp"
             android:text="@string/setWallpaper"
             android:textSize="@dimen/_10ssp"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_black"
             android:layout_margin="@dimen/_2sdp"
             android:textColor="@color/icon_yellow"
             android:background="@drawable/btn_download_shape"

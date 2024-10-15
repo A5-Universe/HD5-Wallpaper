@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.SplashScreen"
+    tools:context=".ui.activities.home.SplashScreen"
     android:orientation="vertical"
     android:fitsSystemWindows="false"
     android:clipToPadding="false"
@@ -44,7 +44,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sansation_bold"
+            android:fontFamily="@font/roboto_bold"
             android:gravity="center"
             android:text="@string/PackageName"
             android:textColor="@color/background"

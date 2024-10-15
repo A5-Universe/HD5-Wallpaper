@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="ui.fragments.HomeFragment"
+    tools:context=".ui.activities.home.fragments.HomeFragment"
     android:background="@color/icon_yellow">
 
     <RelativeLayout
@@ -42,7 +42,7 @@
                 android:id="@+id/txtToolbar"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
-                android:fontFamily="@font/sansation_bold"
+                android:fontFamily="@font/roboto_regular"
                 android:gravity="center"
                 android:text="@string/hd_5_wallpaper"
                 android:textColor="@color/icon_yellow"
@@ -65,7 +65,7 @@
                 android:text="@string/trending"
                 android:textColor="@color/background"
                 android:textSize="@dimen/_20ssp"
-                android:fontFamily="@font/sansation_bold"
+                android:fontFamily="@font/roboto_regular"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginBottom="@dimen/_5sdp"/>
             <androidx.recyclerview.widget.RecyclerView
@@ -88,7 +88,7 @@
                 android:text="@string/categories"
                 android:textColor="@color/background"
                 android:textSize="@dimen/_20ssp"
-                android:fontFamily="@font/sansation_bold"
+                android:fontFamily="@font/roboto_regular"
                 android:gravity="center"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginBottom="@dimen/_5sdp"/>

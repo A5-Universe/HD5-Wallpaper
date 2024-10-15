@@ -8,18 +8,18 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.a5universe.hd5wallpaper.ui.activities.CategoryActivity
+import com.a5universe.hd5wallpaper.ui.activities.category.CategoryActivity
 import com.a5universe.hd5wallpaper.R
-import com.a5universe.hd5wallpaper.data.categoryModel
+import com.a5universe.hd5wallpaper.data.CategoryModel
 import com.bumptech.glide.Glide
 
 class CategoryAdapter(
     private val requireContext: Context,
-    private val listOfCategory: List<categoryModel>
+    private val listOfCategory: List<CategoryModel>
 ) : RecyclerView.Adapter<CategoryAdapter.bomViewHolder>() {
 
 
-    private val  filteredListOfCategory = mutableListOf<categoryModel>()
+    private val  filteredListOfCategory = mutableListOf<CategoryModel>()
     private var query: String = ""
     init {
         filteredListOfCategory.addAll(listOfCategory)

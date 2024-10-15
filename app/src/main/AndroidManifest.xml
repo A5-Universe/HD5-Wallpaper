@@ -22,16 +22,16 @@
         android:theme="@style/Theme.HD5Wallpaper"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activities.LiveWallpaper"
+            android:name=".ui.activities.live_wallpaper.LiveWallpaper"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.SettingActivity"
+            android:name=".ui.activities.setting.SettingActivity"
             android:exported="false" />
-        <activity android:name=".ui.activities.MainActivity" />
-        <activity android:name=".ui.activities.CategoryActivity" />
-        <activity android:name=".ui.activities.FinalWallpaper" />
+        <activity android:name=".ui.activities.home.MainActivity" />
+        <activity android:name=".ui.activities.category.CategoryActivity" />
+        <activity android:name=".ui.activities.set_wallpaper.FinalWallpaper" />
         <activity
-            android:name=".ui.activities.SplashScreen"
+            android:name=".ui.activities.home.SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.HD5WallpaperSplash">
             <intent-filter>

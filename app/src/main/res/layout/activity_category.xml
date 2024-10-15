@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.CategoryActivity"
+    tools:context=".ui.activities.category.CategoryActivity"
     android:background="@color/icon_yellow">
 
         <RelativeLayout
@@ -17,7 +17,7 @@
                 android:id="@+id/catTitle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/sansation_bold"
+                android:fontFamily="@font/roboto_light"
                 android:gravity="center"
                 android:text="@string/categories"
                 android:textColor="@color/icon_yellow"
