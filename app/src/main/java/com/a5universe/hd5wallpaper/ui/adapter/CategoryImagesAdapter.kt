@@ -2,6 +2,7 @@ package com.a5universe.hd5wallpaper.ui.adapter
 
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,12 +28,35 @@ class CategoryImagesAdapter(private val requireContext: Context, private val lis
     }
 
     override fun onBindViewHolder(holder: BomViewHolder, position: Int) {
+        val imageUrlOrPath = listBestOfMonth[position].link
 
-        Glide.with(requireContext).load(listBestOfMonth[position].link).into(holder.imageView)
+        Glide.with(requireContext)
+            .load(listBestOfMonth[position].link)
+            .into(holder.imageView)
+
+        // Set item click listener
         holder.itemView.setOnClickListener {
             val intent = Intent(requireContext, FinalWallpaper::class.java)
-            intent.putExtra("link",listBestOfMonth[position].link)
+            val imageType: String
+
+            imageType = if (isValidUrl(imageUrlOrPath)) { "link" } else { "path" }
+
+            // Set the extras for the intent
+            intent.putExtra("imageType", imageType)
+            intent.putExtra("link", imageUrlOrPath)
+
             requireContext.startActivity(intent)
+        }
+
+    }
+
+    // Validate url or not
+    private fun isValidUrl(url: String): Boolean {
+        return try {
+            val uri = Uri.parse(url)
+            uri.scheme?.startsWith("http") == true
+        } catch (e: Exception) {
+            false
         }
     }
 

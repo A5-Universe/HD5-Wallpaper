@@ -12,6 +12,7 @@ import com.a5universe.hd5wallpaper.ui.activities.category.CategoryActivity
 import com.a5universe.hd5wallpaper.R
 import com.a5universe.hd5wallpaper.data.CategoryModel
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 
 class CategoryAdapter(
     private val requireContext: Context,
@@ -41,7 +42,9 @@ class CategoryAdapter(
     override fun onBindViewHolder(holder: bomViewHolder, position: Int) {
 
         holder.name.text = listOfCategory[position].name
-        Glide.with(requireContext).load(listOfCategory[position].link).into(holder.imageView)
+        Glide.with(requireContext)
+            .load(listOfCategory[position].link)
+            .into(holder.imageView)
 
         // Set visibility based on query match
         holder.itemView.visibility =
